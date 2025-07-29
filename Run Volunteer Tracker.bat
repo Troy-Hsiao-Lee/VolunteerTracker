@@ -1,0 +1,3 @@
+@echo off
+echo Starting Volunteer Service Tracker...
+start "" "VolunteerTracker.exe" 
