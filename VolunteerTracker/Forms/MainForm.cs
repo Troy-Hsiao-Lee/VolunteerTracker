@@ -396,8 +396,8 @@ namespace VolunteerTracker.Forms
             _entriesGrid = new DataGridView
             {
                 Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom,
-                Location = new Point(0, 0),
-                Size = new Size(panel.Width - 20, panel.Height - 50),
+                Location = new Point(0, 20), // Lower the table by 20 pixels from the top
+                Size = new Size(panel.Width - 20, panel.Height - 70), // Adjust height to account for top margin
                 AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
                 AllowUserToAddRows = false,
                 AllowUserToDeleteRows = false,
@@ -520,7 +520,8 @@ namespace VolunteerTracker.Forms
             // Update form elements if they exist
             if (_entriesGrid != null)
             {
-                _entriesGrid.Size = new Size(_entriesGrid.Parent.Width - 20, _entriesGrid.Parent.Height - 50);
+                _entriesGrid.Location = new Point(0, 20); // Maintain top margin
+                _entriesGrid.Size = new Size(_entriesGrid.Parent.Width - 20, _entriesGrid.Parent.Height - 70);
             }
             
             if (_totalHoursLabel != null)
