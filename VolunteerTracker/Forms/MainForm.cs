@@ -407,6 +407,9 @@ namespace VolunteerTracker.Forms
                 ForeColor = Color.White,
                 BorderStyle = BorderStyle.None,
                 GridColor = Color.FromArgb(75, 0, 130), // Dark Purple
+                RowHeadersVisible = false, // Hide row headers to prevent overlap
+                ColumnHeadersHeight = 35, // Ensure headers have proper height
+                RowTemplate = { Height = 30 }, // Set row height
                 DefaultCellStyle = new DataGridViewCellStyle
                 {
                     BackColor = Color.FromArgb(30, 30, 30),
@@ -500,6 +503,12 @@ namespace VolunteerTracker.Forms
             if (_totalHoursLabel != null)
             {
                 _totalHoursLabel.Text = $"Total Hours: {totalHours:F1}";
+            }
+
+            // Ensure the first row is visible if there are entries
+            if (_entries.Count > 0 && _entriesGrid.Rows.Count > 0)
+            {
+                _entriesGrid.FirstDisplayedScrollingRowIndex = 0;
             }
         }
 
