@@ -1,5 +1,6 @@
 # NOTE: The desktop version is outdated (though usable). For the best experience please use https://hourtrackersite.netlify.app for the web version.
 
+(this was also made using Cursor.ai, apologies if that offputs you)
 
 # 🚀 Volunteer Service Tracker
 
