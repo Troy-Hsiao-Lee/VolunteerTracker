@@ -1,3 +1,6 @@
+# NOTE: The desktop version is outdated (though usable). For the best experience please use https://hourtrackersite.netlify.app for the web version.
+
+
 # 🚀 Volunteer Service Tracker
 
 A modern Windows desktop application for tracking volunteer service hours with a beautiful space-themed UI and comprehensive features.
