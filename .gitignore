@@ -14,12 +14,12 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
-# Compiled files
-*.exe
-*.dll
-*.pdb
-*.deps.json
-*.runtimeconfig.json
+# Compiled files (commented out for demo release)
+# *.exe
+# *.dll
+# *.pdb
+# *.deps.json
+# *.runtimeconfig.json
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
